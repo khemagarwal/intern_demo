@@ -13,5 +13,6 @@ public class DisplayPdfActivity extends AppCompatActivity {
 
         //create recycler view in this activity and use it to display pdf files.
 
+
     }
 }

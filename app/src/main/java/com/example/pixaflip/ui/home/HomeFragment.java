@@ -1,6 +1,7 @@
 package com.example.pixaflip.ui.home;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,7 +38,12 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
 
                 //play video in landscape mode.
-                Toast.makeText(MainActivity.context,"Play video available in Assets folder",Toast.LENGTH_LONG).show();
+//                Toast.makeText(MainActivity.context,"Play video available in Assets folder",Toast.LENGTH_LONG).show();
+                Intent i=new Intent(MainActivity.context,playvideo.class);
+                startActivity(i);
+
+
+
             }
         });
 
